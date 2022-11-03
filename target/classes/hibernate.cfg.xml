@@ -11,9 +11,12 @@
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/mydb</property>
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
         <mapping class="com.example.hibernate.Student"/>
         <mapping class="com.example.hibernate.StudentAddress"/>
-        <mapping class="com.example.oneToOneRelationship.Question"/>
-        <mapping class="com.example.oneToOneRelationship.Answer"/>
+        <mapping class="com.example.oneToManyRelationship.Answer"/>
+        <mapping class="com.example.oneToManyRelationship.Question"/>
+        <mapping class="com.example.manyToManyRelationship.Employee"/>
+        <mapping class="com.example.manyToManyRelationship.Project"/>
     </session-factory>
 </hibernate-configuration>

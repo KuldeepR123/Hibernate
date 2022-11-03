@@ -43,7 +43,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return this.id + " : " + this.name + " : " + this.address;
+        return this.id + " : " + this.name + " : " + this.course.courseName + " : " + this.course.language + " : " +  this.address;
     }
 
     public Course getCourse() {
